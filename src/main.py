@@ -63,7 +63,6 @@ if __name__ == "__main__":
     hp.create_bar_plot(attacks, title="All groups 1970 - 2020", ylabel="Attack type",
                        xlabel="Amount of attacks", name="tot_attacks")
 
-
     # Creating bar graphs for attacks used by each group
     attack_types = top_5_df["attacktype1_txt"].unique()
     groups = top_5_total.index.values
@@ -74,3 +73,15 @@ if __name__ == "__main__":
         hp.create_bar_plot(
             df, title=f"{group} 1970 - 2020", ylabel="Attack Type", xlabel="Amount",
             name=f"tot_{name}")
+
+    # Creating bar graphs for attacks used by modern groups
+    attack_types = top_mod_df["attacktype1_txt"].unique()
+    groups = top_5_modern.index.values
+    types_per_group = top_mod_df.groupby(
+        ["gname", "attacktype1_txt"]).size()
+    for idx, group in enumerate(groups):
+        name = group.split("/")[0]
+        df = types_per_group[group].sort_values()
+        hp.create_bar_plot(
+            df, title=f"{group} 1970 - 2020", ylabel="Attack Type", xlabel="Amount",
+            name=f"mod_{name}")
