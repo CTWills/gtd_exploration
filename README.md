@@ -33,7 +33,7 @@ It is important to note that events in 1993 are not included in this dataset, as
 
 The data is orginally in an excel file with over 200,000 rows. Reading this with python will be extremely slow so I first converted the file to a csv. <br>
 From there I had to filter out all data that didnt involve the United States. <br>
-There are also criteria for each event that gives a confidence level of whether or not the event was actually a terrorist attack. I am including only the events where there are no doubt its a terrorist attack.
+There are also criteria for each event that gives a confidence level of whether or not the event was actually a terrorist attack. I am including only the events where there are no doubt its a terrorist attack. This criteria started being recored only after 1997, so all events before then are also included in this analysis.
 
 # Findings
 
