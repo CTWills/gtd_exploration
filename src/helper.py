@@ -42,9 +42,9 @@ def create_bar_plot(df, title=None, ylabel=None, xlabel=None, name="Bar"):
         Returns:
             None
     """
+    fig, ax = plt.subplots(figsize=(10, 5))
     df.plot.barh(title=title,
-                 ylabel=ylabel, xlabel=xlabel,
-                 figsize=(10, 5))
+                 ylabel=ylabel, xlabel=xlabel)
     plt.tight_layout()
     plt.savefig(f"./img/{name}.png")
 

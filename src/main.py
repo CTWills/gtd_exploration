@@ -37,7 +37,8 @@ if __name__ == "__main__":
         (usa_df["doubtterr"] == 0) | (usa_df["doubtterr"] == -9))
     seventy_eighty_perc = (usa_df[query]["year"].value_counts(
         True) * 100).sort_index()[:11].sum()
-    top_5_timeline = usa_df[query].groupby(["gname", "year"])["year"].count()
+    top_5_df = usa_df[query]
+    top_5_timeline = top_5_df.groupby(["gname", "year"])["year"].count()
 
     # create timeline graph for 1970 - 2020
     hp.create_timeline(top_5_timeline, groups, name="tot_timeline", text=True,
@@ -48,11 +49,28 @@ if __name__ == "__main__":
     query = usa_df["gname"].isin(groups) & (
         ((usa_df["doubtterr"] == 0) | (usa_df["doubtterr"] == -9)) &
         (usa_df["year"] >= 2010))
-    top_modern_timeline = usa_df[query].groupby(["gname", "year"])[
+    top_mod_df = usa_df[query]
+    top_modern_timeline = top_mod_df.groupby(["gname", "year"])[
         "year"].count()
 
     # create timeline for 2010 - 2020
     hp.create_timeline(top_modern_timeline, groups, name="mod_timeline",
                        title="Activity over time (2010 - 2020)")
 
-    
+    # most used attack type from 1970 - 2020
+    attacks = top_5_df.groupby("attacktype1_txt").size().sort_values()
+
+    hp.create_bar_plot(attacks, title="All groups 1970 - 2020", ylabel="Attack type",
+                       xlabel="Amount of attacks", name="tot_attacks")
+
+
+    # Creating bar graphs for attacks used by each group
+    attack_types = top_5_df["attacktype1_txt"].unique()
+    groups = top_5_total.index.values
+    types_per_group = top_5_df.groupby(["gname", "attacktype1_txt"]).size()
+    for idx, group in enumerate(groups):
+        name = group.split("/")[0]
+        df = types_per_group[group].sort_values()
+        hp.create_bar_plot(
+            df, title=f"{group} 1970 - 2020", ylabel="Attack Type", xlabel="Amount",
+            name=f"tot_{name}")
