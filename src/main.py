@@ -85,3 +85,31 @@ if __name__ == "__main__":
         hp.create_bar_plot(
             df, title=f"{group} 1970 - 2020", ylabel="Attack Type", xlabel="Amount",
             name=f"mod_{name}")
+
+    # Found top 10 targets from 1970 - 2020
+    top_10_targets = top_5_df.groupby(
+        ["targtype1_txt", "targsubtype1_txt"]).size().sort_values(ascending=False)[:10]
+
+    # Creating bar graph for top 10 targets from 1970 - 2020
+    df = top_10_targets.reset_index(name="count")[
+        ["targsubtype1_txt", "count"]].sort_values(by="count")
+    fig, ax = plt.subplots()
+    df.plot.barh(x="targsubtype1_txt", y="count",
+                 title="Top 10 Targets 1970 - 2020", ylabel="Target",
+                 xlabel="Amount", figsize=(10, 5))
+    plt.tight_layout()
+    plt.savefig("./img/tot_targets.png")
+
+    # Modern targets
+    modern_targets = top_mod_df.groupby(
+        ["targtype1_txt", "targsubtype1_txt"]).size().sort_values(ascending=False)[:10]
+
+    # Modern target bar graph
+    df = modern_targets.reset_index(name="count")[
+        ["targsubtype1_txt", "count"]].sort_values(by="count")
+    fig, ax = plt.subplots()
+    df.plot.barh(x="targsubtype1_txt", y="count",
+                 title="Top 10 Targets 2010 - 2020",
+                 ylabel="Target", xlabel="Amount", figsize=(10, 5))
+    plt.tight_layout()
+    plt.savefig("./img/mod_targets.png")
