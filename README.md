@@ -38,7 +38,7 @@ There are also criteria for each event that gives a confidence level of whether 
 # Findings
 
 Here we can see the attack frequency every 10 years starting from 1970.
-!(https://github.com/CTWills/gtd_exploration/blob/main/img/tot_timeline.png)
+![screenshot](https://github.com/CTWills/gtd_exploration/blob/main/img/tot_timeline.png)
 
 # Key results
 
