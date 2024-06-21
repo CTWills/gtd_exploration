@@ -37,7 +37,9 @@ There are also criteria for each event that gives a confidence level of whether 
 
 # Findings
 
-Here we can see the attack frequency every 10 years starting from 1970.
+Here we can see the attack frequency every 10 years starting from 1970. <br>
+Note that the groups, Left-Wing Militants and FALN died out before 1990, but they also count for a lot of attacks in this dataset. About 45% of attacks of this dataset were from 1970-1980. <br>
+This initial discovery does not give a relevant, but still interesting, insight to what groups present the most threat to the US today. This data is included so we can see the differences between attacks back then, and more modern attacks.
 ![screenshot](https://github.com/CTWills/gtd_exploration/blob/main/img/tot_timeline.png)
 
 # Key results
