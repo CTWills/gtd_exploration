@@ -37,6 +37,8 @@ There are also criteria for each event that gives a confidence level of whether 
 
 # Findings
 
+Here we can see the attack frequency every 10 years starting from 1970.
+
 # Key results
 
 # Credits
