@@ -30,3 +30,29 @@ if __name__ == "__main__":
     hp.create_bar_plot(
         top_5_modern, title="Top 5 groups that attack the most (2010- 2020)",
         ylabel="Group name", xlabel="Amount of attacks", name="top_5_mod")
+
+    # get data for timeline for 1970 - 2020
+    groups = top_5_total.index.values
+    query = usa_df["gname"].isin(groups) & (
+        (usa_df["doubtterr"] == 0) | (usa_df["doubtterr"] == -9))
+    seventy_eighty_perc = (usa_df[query]["year"].value_counts(
+        True) * 100).sort_index()[:11].sum()
+    top_5_timeline = usa_df[query].groupby(["gname", "year"])["year"].count()
+
+    # create timeline graph for 1970 - 2020
+    hp.create_timeline(top_5_timeline, groups, name="tot_timeline", text=True,
+                       title="Activity over time (1970 - 2020)", perc=seventy_eighty_perc)
+
+    # get data for timeline for 2010 - 2020
+    groups = top_5_modern.index.values
+    query = usa_df["gname"].isin(groups) & (
+        ((usa_df["doubtterr"] == 0) | (usa_df["doubtterr"] == -9)) &
+        (usa_df["year"] >= 2010))
+    top_modern_timeline = usa_df[query].groupby(["gname", "year"])[
+        "year"].count()
+
+    # create timeline for 2010 - 2020
+    hp.create_timeline(top_modern_timeline, groups, name="mod_timeline",
+                       title="Activity over time (2010 - 2020)")
+
+    
