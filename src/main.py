@@ -57,6 +57,13 @@ if __name__ == "__main__":
     hp.create_timeline(top_modern_timeline, groups, name="mod_timeline",
                        title="Activity over time (2010 - 2020)")
 
+    # create full timeline for modern groups timeline for 1970 - 2020
+    query = usa_df["gname"].isin(groups) & (
+        ((usa_df["doubtterr"] == 0) | (usa_df["doubtterr"] == -9)))
+    hp.create_timeline(usa_df[query].groupby(["gname", "year"])[
+        "year"].count(), groups, name="mod_timeline_1970",
+        title="Activity over time (1970 - 2020)")
+
     # most used attack type from 1970 - 2020
     attacks = top_5_df.groupby("attacktype1_txt").size().sort_values()
 
@@ -83,7 +90,7 @@ if __name__ == "__main__":
         name = group.split("/")[0]
         df = types_per_group[group].sort_values()
         hp.create_bar_plot(
-            df, title=f"{group} 1970 - 2020", ylabel="Attack Type", xlabel="Amount",
+            df, title=f"{group} 2010 - 2020", ylabel="Attack Type", xlabel="Amount",
             name=f"mod_{name}")
 
     # Found top 10 targets from 1970 - 2020
