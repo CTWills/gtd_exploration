@@ -50,7 +50,15 @@ Note that the groups, Left-Wing Militants and FALN died out before 1990, but the
 Because of this, these groups are most likely not a relevant source of danger in modern times, so I cut the timeline down, and started looking between 2010 and 2020. Its still important to understand these initial groups for potential furthering of these analysis, which we will get too later.
 
 ![screenshot](https://github.com/CTWills/gtd_exploration/blob/main/img/tot_timeline.png)
- 
+
+* Modern groups (2010 - 2020)
+  <br>
+  Here on the left we now have the more modern groups. We still do not know who the majority of these attackers are.
+  Here you can see the big difference between the times as well, all groups, but the white supremicists/nationalists have changed and we are going to be focusing on the groups on the left graph here for further analysis.
+  There does seem to be a big change in motivation, with the 1970 groups being more political, but modern groups are more religion/race motivated.
+  
+![screenshot](https://github.com/CTWills/gtd_exploration/blob/main/img/top_5_mod.png)
+
 
 # Key results
 
