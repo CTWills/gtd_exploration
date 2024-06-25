@@ -41,12 +41,16 @@ There are also criteria for each event that gives a confidence level of whether 
   Looking at the entire history from 1970 - 2020, here are the top 5 most active terrorist groups that target the US.
   With this data, we actually do not know a large portion of who committed these attacks.
   When no information about the perpetrator group is available, this field is coded as “Unknown.”
+![screenshot](https://github.com/CTWills/gtd_exploration/blob/main/img/top_5_tot.png)
 * Here we can see the attack frequency every 10 years starting from 1970.
-Note that the groups, Left-Wing Militants and FALN died out before 1990, but they also count for a lot of attacks in this dataset. About 45% of attacks of this dataset were from 1970-1980. <br>
-This initial discovery does not give a relevant, but still interesting, insight to what groups present the most threat to the US today. This data is included so we can see the differences between attacks back then, and more modern attacks.
-![screenshot](https://github.com/CTWills/gtd_exploration/blob/main/img/tot_timeline.png)
+  <br>
+1970s is notably when the majority of the attacks happened. There is a lot of interesting history to get into about why, but mainly there was significant political, social, and economic issues in general,
+You had the vietnam war still going in in the early 70s, cold war, Roe V Wade in 1973, you can then see the rise of the Anti-Abortion extremists. <br>
+Note that the groups, Left-Wing Militants and FALN died out before 1990, but they also count for a lot of attacks in this dataset. About 45% of attacks in general were from 1970-1980. 
+Because of this, these groups are most likely not a relevant source of danger in modern times, so I cut the timeline down, and started looking between 2010 and 2020. Its still important to understand these initial groups for potential furthering of these analysis, which we will get too later.
 
-* 
+![screenshot](https://github.com/CTWills/gtd_exploration/blob/main/img/tot_timeline.png)
+ 
 
 # Key results
 
