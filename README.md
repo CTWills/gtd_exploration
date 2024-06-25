@@ -78,9 +78,8 @@ Because of this, these groups are most likely not a relevant source of danger in
 
 * Here see can the the most used attacks by each group
   
-![screenshot]("https://github.com/CTWills/gtd_exploration/blob/main/img/mod_Jihadi-inspired extremists.png")
+![screenshot](https://github.com/CTWills/gtd_exploration/blob/main/img/mod_Jihadi-inspired%20extremists.png)
 
-Transition - So now we have our modern groups here and see some trends over time, let's look and see what method of attack each of these groups do.
 
 # Key results
 
