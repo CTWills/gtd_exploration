@@ -87,7 +87,25 @@ Because of this, these groups are most likely not a relevant source of danger in
 ![screenshot](https://github.com/CTWills/gtd_exploration/blob/main/img/mod_Anti-Muslim%20extremists.png)
 
 ![screenshot](https://github.com/CTWills/gtd_exploration/blob/main/img/mod_Anti-Semitic%20extremists.png)
+
+
+* Most used method of attack overall
+
+![screenshot](https://github.com/CTWills/gtd_exploration/blob/main/img/mod_methods.png)
+
+* Most targeted targets
+
+![screenshot](https://github.com/CTWills/gtd_exploration/blob/main/img/mod_targets.png)
+  
 # Key results
+* We do not know the identities of the majority of attackers
+* White Supremacists/Nationalists appear to have been one of the top 5 most active groups from overall (1970 - 2020) and also in recent times (2010 - 2020)
+* Extremist groups are 3 out of 5 most active groups in today’s time
+    - Anti-Muslim Extremists
+    - Jihadi-inspired extremists
+    - Anti-Semitic extremists
+* Infrastructure and armed assault are the most popular methods of attack with Places of Worship being the main target
+* Starting from 2016, there is a spike in attacks for every election year (2016, 2018, 2020)
 
 # Credits
 
