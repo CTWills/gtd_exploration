@@ -37,6 +37,7 @@ There are also criteria for each event that gives a confidence level of whether 
 
 # Findings
 * Top 5 Prominent Groups (1970 - 2020)
+* <br>
   Looking at the entire history from 1970 - 2020, here are the top 5 most active terrorist groups that target the US.
   With this data, we actually do not know a large portion of who committed these attacks.
   When no information about the perpetrator group is available, this field is coded as “Unknown.”
