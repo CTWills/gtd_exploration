@@ -36,11 +36,16 @@ From there I had to filter out all data that didnt involve the United States. <b
 There are also criteria for each event that gives a confidence level of whether or not the event was actually a terrorist attack. I am including only the events where there are no doubt its a terrorist attack. This criteria started being recored only after 1997, so all events before then are also included in this analysis.
 
 # Findings
-
-Here we can see the attack frequency every 10 years starting from 1970. <br>
+* Top 5 Prominent Groups (1970 - 2020)
+  Looking at the entire history from 1970 - 2020, here are the top 5 most active terrorist groups that target the US.
+  With this data, we actually do not know a large portion of who committed these attacks.
+  When no information about the perpetrator group is available, this field is coded as “Unknown.”
+* Here we can see the attack frequency every 10 years starting from 1970.
 Note that the groups, Left-Wing Militants and FALN died out before 1990, but they also count for a lot of attacks in this dataset. About 45% of attacks of this dataset were from 1970-1980. <br>
 This initial discovery does not give a relevant, but still interesting, insight to what groups present the most threat to the US today. This data is included so we can see the differences between attacks back then, and more modern attacks.
 ![screenshot](https://github.com/CTWills/gtd_exploration/blob/main/img/tot_timeline.png)
+
+* 
 
 # Key results
 
