@@ -59,6 +59,28 @@ Because of this, these groups are most likely not a relevant source of danger in
   
 ![screenshot](https://github.com/CTWills/gtd_exploration/blob/main/img/top_5_mod.png)
 
+* Modern groups activity
+  <br>
+  Here we see the activity from these groups in more recent times. This graph here is telling us a few interesting trends.
+  For the most part, prior to 2016, these groups were not as active, compared to after 2016.
+  All there peak years are after or on 2016, with all but unknown looking to trend down.
+  The biggest trend here is with unknown. It peaks in 2016, then again in 2018 and huge jump in 2020.
+
+![screenshot](https://github.com/CTWills/gtd_exploration/blob/main/img/mod_timeline.png)
+
+* Election year peak activity
+  <br>
+  If you havent noticed the importance of these dates yet, they are the election years in the US.
+  These are all election years in the US. What is interesting is the prior election years aren't showing this trend, at least with these groups.
+  You can only see this trend really with the attacks we have no clue who did them. 2020 had almost half the country voting with a total of 155 million votes casted. 30 million more votes than the 2016 year.
+
+![screenshot](https://github.com/CTWills/gtd_exploration/blob/main/img/mod_election.png)
+
+* Here see can the the most used attacks by each group
+  
+![screenshot](https://github.com/CTWills/gtd_exploration/blob/main/img/"mod_Jihadi-inspired extremists".png)
+
+Transition - So now we have our modern groups here and see some trends over time, let's look and see what method of attack each of these groups do.
 
 # Key results
 
