@@ -80,7 +80,13 @@ Because of this, these groups are most likely not a relevant source of danger in
   
 ![screenshot](https://github.com/CTWills/gtd_exploration/blob/main/img/mod_Jihadi-inspired%20extremists.png)
 
+![screenshot](https://github.com/CTWills/gtd_exploration/blob/main/img/mod_Unknown.png)
 
+![screenshot](https://github.com/CTWills/gtd_exploration/blob/main/img/mod_White%20supremacists.png)
+
+![screenshot](https://github.com/CTWills/gtd_exploration/blob/main/img/mod_Anti-Muslim%20extremists.png)
+
+![screenshot](https://github.com/CTWills/gtd_exploration/blob/main/img/mod_Anti-Semitic%20extremists.png)
 # Key results
 
 # Credits
